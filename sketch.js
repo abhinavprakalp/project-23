@@ -62,8 +62,6 @@ function draw() {
   background(0);
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y
-	
-  boxBottomBody = Bodies.rectangle(boxPosition+100, boxY+45-20, 200,20 , {isStatic:true} ); World.add(world, boxBottomBody);
   
   if(keyDown(DOWN_ARROW)) { Body.setStatic(packageBody, false); }
 
