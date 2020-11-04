@@ -40,9 +40,8 @@ function setup() {
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
 	World.add(world, ground);
 
-	box1 = createSprite(width/2, 650, 200,20);
-	World.add(world, box1);
-	box1.shapeColor=("red");
+	boxBottomBody = Bodies.rectangle(boxPosition+100, boxY+45-20, 200,20 , {isStatic:true} );
+	World.add(world, boxBottomBody);
 
 	box2 = createSprite(495, 590, 10,100);
 	World.add(world, box2);
