@@ -44,7 +44,7 @@ function setup() {
 	World.add(world, box1);
 	box1.shapeColor=("red");
 
-	boxBottomBody = Bodies.rectangle(box1Position, box1Y, 200,20 , {isStatic:true} );
+	boxBottomBody = Bodies.rectangle(box1PositionX, box1Y, 200,20 , {isStatic:true} );
 	World.add(world, boxBottomBody);
 
 	box2 = createSprite(495, 590, 10,100);
